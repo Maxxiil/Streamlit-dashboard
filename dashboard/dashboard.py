@@ -46,8 +46,8 @@ def create_bycity_df(df):
     return bycity_df
 
 
-all_df = pd.read_csv("main_data.csv")
-geolocation_df = pd.read_csv('Geolocation.csv')
+all_df = pd.read_csv("dashboard/main_data.csv")
+geolocation_df = pd.read_csv('dashboard/Geolocation.csv')
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
